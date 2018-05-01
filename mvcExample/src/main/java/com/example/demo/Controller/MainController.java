@@ -20,11 +20,7 @@ public class MainController {
 
     List<Tal> tallist = new ArrayList<>();
 
-        Tal tal1 = new Tal(talService.generateTal());
-        Tal tal2 = new Tal(talService.generateTal());
-
-        tallist.add(tal2);
-        tallist.add(tal1);
+        tallist = talService.generateList();
 
         model.addAttribute("tallist", tallist);
 
